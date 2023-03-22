@@ -6,11 +6,11 @@
       "thumbnail": "https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg",
       "price": 14,
       "rating": 3,
-      "featured": false,
+      "featured": true,
       "id": 1
     },
     {
-      "name": "The Last Thing He Told Me: A Novel",
+      "name": "Joy",
       "author": "Laura Dave",
       "thumbnail": "https://m.media-amazon.com/images/P/1501171348.01._SCLZZZZZZZ_SX500_.jpg",
       "price": 13.99,
@@ -19,13 +19,31 @@
       "id": 2
     },
     {
-      "name": "Eloquent JavaScript, 3rd Edition",
+      "name": "Eloquent JavaScript, 4th Edition",
       "author": "Marijn Haverbeke",
       "thumbnail": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
       "price": 23.99,
       "rating": 4,
       "featured": true,
       "id": 4
+    },
+    {
+      "name": "Vivo iQOO Z6x",
+      "author": "Mick Herron",
+      "thumbnail": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
+      "price": 21,
+      "rating": 2,
+      "featured": true,
+      "id": 6
+    },
+    {
+      "name": "Joy Debnath",
+      "author": "Mick Herron",
+      "thumbnail": "https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg",
+      "price": 142,
+      "rating": 1,
+      "featured": false,
+      "id": 7
     }
   ]
 }
