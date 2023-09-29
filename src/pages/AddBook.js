@@ -8,7 +8,9 @@ const AddBook = () => {
 
   const [name, setName] = useState('');
   const [author, setAuthor] = useState('');
-  const [thumbnail, setThumbnail] = useState('');
+  const [thumbnail, setThumbnail] = useState(
+    'https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg',
+  );
   const [price, setPrice] = useState(0);
   const [rating, setRating] = useState(0);
   const [featured, setFeatured] = useState(false);
@@ -97,7 +99,7 @@ const AddBook = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="lws-rating">Rating</label>
+                  <label htmlFor="lws-rating">Rating (Out of 5)</label>
                   <input
                     required
                     className="text-input"

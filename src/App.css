@@ -595,6 +595,7 @@ body {
 .book-card {
   display: flex;
   align-items: flex-start;
+  border: 1px solid rgb(228, 228, 228);
 }
 
 .book-card> :not([hidden])~ :not([hidden]) {
@@ -610,7 +611,7 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-shadow: 0 0.75rem 1.5rem #12263f08;
   --tw-shadow-colored: 0 0.75rem 1.5rem var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: 2px 5px 20px 1px rgb(226, 226, 226);
 }
 
 .lws-book-name {
@@ -1142,3 +1143,4 @@ input[type="number"]:focus {
     padding-right: 1.5rem;
   }
 }
+

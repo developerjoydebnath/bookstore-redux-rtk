@@ -5,14 +5,14 @@ import { useDeleteBookMutation } from '../features/api/apiSlice';
 const BookList = ({ book }) => {
   const navigate = useNavigate();
 
-  const { id, author, featured, name, price, rating, thumbnail } = book;
+  const { _id, id, author, featured, name, price, rating, thumbnail } = book;
 
   const [deleteBook, { isSuccess, isLoading, isError }] = useDeleteBookMutation();
 
   const handleDelete = () => {
     const agree = window.confirm('Are you sure you want to delete the book?');
 
-    if (id && agree) deleteBook(id);
+    if (_id && agree) deleteBook(_id);
   };
 
   const ratingArray = Array.from({ length: rating }, (_, index) => index + 1);
@@ -24,7 +24,7 @@ const BookList = ({ book }) => {
         <div className="flex items-center justify-between">
           {featured ? <span className="lws-badge">featured</span> : <span></span>}
           <div className="text-gray-500 space-x-2">
-            <button className="lws-edit " onClick={() => navigate(`/edit-book/${id}`)}>
+            <button className="lws-edit " onClick={() => navigate(`/edit-book/${_id}`)}>
               <svg fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                 <path
                   strokeLinecap="round"

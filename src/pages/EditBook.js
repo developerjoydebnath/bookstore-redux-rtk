@@ -5,7 +5,9 @@ import { useGetBookQuery } from '../features/api/apiSlice';
 
 const EditBook = () => {
   const { bookId } = useParams();
-  const { data: book, isLoading, isError } = useGetBookQuery(bookId);
+  const { data: singleBook, isLoading, isError } = useGetBookQuery(bookId);
+
+  const book = singleBook?.data;
 
   let content = null;
 
@@ -15,7 +17,7 @@ const EditBook = () => {
   if (!isLoading && isError) {
     content = <h1>There was an error!</h1>;
   }
-  if (!isLoading && !isError && book?.id) {
+  if (!isLoading && !isError && book?._id) {
     content = <Edit book={book} />;
   }
 

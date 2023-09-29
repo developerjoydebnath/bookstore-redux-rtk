@@ -15,7 +15,7 @@
       "thumbnail": "https://m.media-amazon.com/images/P/1501171348.01._SCLZZZZZZZ_SX500_.jpg",
       "price": 13.99,
       "rating": 4,
-      "featured": false,
+      "featured": true,
       "id": 2
     },
     {
@@ -44,6 +44,15 @@
       "rating": 1,
       "featured": false,
       "id": 7
+    },
+    {
+      "name": "Joy Debnath",
+      "author": "Mick Herron",
+      "thumbnail": "https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg",
+      "price": 200,
+      "rating": 5,
+      "featured": false,
+      "id": 8
     }
   ]
 }

@@ -6,7 +6,7 @@ const Edit = ({ book }) => {
   const navigate = useNavigate();
   const [editBook, { isLoading, isSuccess, isError }] = useEditBookMutation();
   const {
-    id,
+    _id,
     author: initialAuthor,
     featured: initialFeatured,
     name: initialName,
@@ -34,7 +34,7 @@ const Edit = ({ book }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     editBook({
-      id,
+      _id,
       data: { name, author, thumbnail, price, rating, featured },
     });
     fromReset();
@@ -96,7 +96,7 @@ const Edit = ({ book }) => {
         </div>
 
         <div className="space-y-2">
-          <label htmlFor="lws-rating">Rating</label>
+          <label htmlFor="lws-rating">Rating (Out of 5)</label>
           <input
             required
             className="text-input"
